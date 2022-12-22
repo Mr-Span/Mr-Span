@@ -1,4 +1,4 @@
 - 👋 Hi, I’m @Mr-Span
-- 👀 I’m interested in game decelopment, robotics and automatization.
-- 🌱 I’m currently learning Java!
+- 👀 I’m interested in Python, robotics and automatization.
+- 🌱 I’m currently learning Machine learning/AI!
 

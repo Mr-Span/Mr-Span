@@ -27,16 +27,7 @@ The automation collects current information, the LLM agents prepare summaries, a
 
 The following is a simplified representation of the workflow, with generic source names:
 
-```mermaid
-flowchart TD
-    M[Maestro orchestration] --> C[RPA data collection]
-    S[Source platforms and Redshift] --> C
-    C --> D[Current profile data]
-    D --> L[LLM summarization]
-    D --> U[Studio Web review application]
-    L --> U
-    U --> H[Human verification and approval]
-```
+![Maestro coordinates RPA collection from source platforms and Redshift, LLM summarization, and Studio Web review. The operator sees both collected data and summaries before verifying and approving the information.](assets/customer-profile-flow.svg)
 
 The review interface combines the structured information and the generated summary so the operator can inspect the result in context. Human approval is part of the production workflow.
 

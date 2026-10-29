@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="850" viewBox="0 0 440 850" role="img" aria-labelledby="flow-title flow-description">
+  <title id="flow-title">Customer profile review workflow</title>
+  <desc id="flow-description">Maestro coordinates RPA data collection from source platforms and Redshift. Current profile data feeds LLM summarization and the Studio Web review application. The operator reviews the collected data and summaries, then verifies and approves the information.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f6f68"/>
+    </marker>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; }
+      .label { fill: #173d39; font-size: 21px; font-weight: 600; text-anchor: middle; }
+      .detail { fill: #435b58; font-size: 17px; text-anchor: middle; }
+      .node { fill: #f5faf9; stroke: #7ba7a1; stroke-width: 1.5; }
+      .edge { fill: none; stroke: #1f6f68; stroke-width: 2; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect x="1" y="1" width="438" height="848" rx="18" fill="#ffffff" stroke="#d0dedb"/>
+  <text class="label" x="220" y="40">Maestro orchestration</text>
+  <text class="detail" x="220" y="68">Coordinates collection and review</text>
+
+  <rect class="node" x="35" y="100" width="330" height="110" rx="12"/>
+  <text class="label" x="200" y="140">RPA data collection</text>
+  <text class="detail" x="200" y="172">Source platforms + Redshift</text>
+  <path class="edge" d="M200 210 V253"/>
+
+  <rect class="node" x="35" y="260" width="330" height="85" rx="12"/>
+  <text class="label" x="200" y="309">Current profile data</text>
+  <path class="edge" d="M200 345 V388"/>
+
+  <rect class="node" x="35" y="395" width="330" height="85" rx="12"/>
+  <text class="label" x="200" y="445">LLM summarization</text>
+  <path class="edge" d="M200 480 V523"/>
+
+  <rect class="node" x="35" y="530" width="330" height="110" rx="12"/>
+  <text class="label" x="200" y="571">Studio Web review</text>
+  <text class="detail" x="200" y="603">Data, summaries, charts and tables</text>
+  <path class="edge" d="M365 302 H407 V585 H372"/>
+  <text class="detail" x="390" y="440" transform="rotate(90 390 440)">Collected data</text>
+  <path class="edge" d="M200 640 V683"/>
+
+  <rect x="35" y="690" width="330" height="110" rx="12" fill="#eaf5ee" stroke="#5c9773" stroke-width="1.5"/>
+  <text class="label" x="200" y="732">Human verification</text>
+  <text class="detail" x="200" y="764">Approval by the operator</text>
+  <text class="detail" x="220" y="828">Simplified, anonymized representation</text>
+</svg>
